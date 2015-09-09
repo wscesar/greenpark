@@ -32,6 +32,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
     <script src='assets/js/input-validate.js'></script>
+    <script src='assets/js/send-form.js'></script>
     <script src='assets/js/blueprint.js'></script>
     <script src='assets/js/unbounce.js'></script>
     <script src='assets/js/scroll.js'></script>

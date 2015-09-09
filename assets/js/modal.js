@@ -5,10 +5,11 @@ modal_banner_thumbs = document.querySelectorAll('#modal .banner .thumbs button')
 appartments_thumbs  = document.querySelectorAll('#appartments .thumbs img')
 modal_banner_left_arrow = document.querySelector('#modal .banner .ctrl.left')
 modal_banner_right_arrow = document.querySelector('#modal .banner .ctrl.right')
-// modal_banner_arrows = document.querySelectorAll('#modal .banner .ctrl')
+
+
 
 // close modal window
-modal_background.onclick = function(){
+modal_background.onclick = function() {
     modal_window.style.opacity = 0;
 
     setTimeout(function(){
@@ -16,6 +17,8 @@ modal_background.onclick = function(){
         modal_window.removeAttribute('style');
     },1000)
 }
+
+
 
 modal_banner_left_arrow.onclick = function() {
     var n = document.querySelector('.modal .banner img.active').getAttribute('data-number') - 1
@@ -31,6 +34,8 @@ modal_banner_left_arrow.onclick = function() {
     modal_banner_thumbs[n].classList.add('active');
 }
 
+
+
 modal_banner_right_arrow.onclick = function() {
     var n = document.querySelector('.modal .banner img.active').getAttribute('data-number') - 1
 
@@ -44,6 +49,7 @@ modal_banner_right_arrow.onclick = function() {
     modal_banner[n].classList.add('active');
     modal_banner_thumbs[n].classList.add('active');
 }
+
 
 
 for ( var i = 0 ; i < appartments_thumbs.length ; i++) {

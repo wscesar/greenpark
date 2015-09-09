@@ -3,12 +3,11 @@
     date_default_timezone_set("Brazil/East");
     
     require 'smtp.php';
-    require 'switch-receiver.php';
-    require 'save-contact.php';
+    // require 'save-contact.php';
 
     $smtp->host = 'mail.ituinformatica.com'; // smtp.myserver.com
-    $smtp->user = 'william@ituinformatica.com'; // myuser@myserver.com
-    $smtp->pass = 'wsk8c0r3'; // mypop3password
+    $smtp->user = 'teste@ituinformatica.com'; // myuser@myserver.com
+    $smtp->pass = 'itu123456'; // mypop3password
 
     $msg = '<table>
                 <tr>
@@ -36,7 +35,7 @@
     // Send
     // $smtp->send('wscesar@gmail.com', 'testando envio', $msg)
 
-    $success = $smtp->send($to, 'Mensagem Enviada Por: '.strtoupper($name), $msg);
+    $success = $smtp->send('wscesar@gmail.com', 'Mensagem Enviada Por: '.strtoupper($name), $msg);
 
     // if( !$success ) {
     //     echo 'ok';
