@@ -1,0 +1,98 @@
+header
+	background: $white 
+	height: 127px
+	z-index: 3
+	position: fixed
+
+	&.fixed
+		height: 63.5px
+
+		.logo
+			height: 44.5px
+
+		.border
+			height: 2px
+
+	.border
+		height: 11px
+		float: left
+		width: 100%
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+
+		span
+			-webkit-flex: 1
+			-ms-flex: 1
+			flex: 1
+
+		.span1
+			background: #8ac3c0
+
+		.span2
+			background: #e9af33
+
+		.span3
+			background: #ca4928
+
+		.span4
+			background: #781517
+
+		.span5
+			background: #005c5f
+
+		.span6
+			background: #61ad6e
+
+		.span7
+			background: #8ac3c0
+
+		.span8
+			background: #e9af33
+
+		.span9
+			background: #ca4a29
+
+	.logo
+		display: block
+		float: left
+		top: 50%
+		+transform(translateY(-50%))
+
+	nav
+		float: right
+		top: 50%
+		+transform(translateY(-50%))
+		width: auto
+
+		.button
+			display: none
+
+		a
+			color: $theme-green
+			display: block
+			float: left
+			font-size: 18px
+
+			&::after
+				background: #e9731e
+				bottom: -8px
+				content: ''
+				display: block
+				left: 0
+				position: absolute
+				width: 0px
+				+transition(width 0.5s)
+
+			&:hover::after
+				width: 47px
+				height: 4px
+				width: 100%
+
+		span
+			background: $theme-green
+			display: block
+			float: left
+			height: 21px
+			margin: 0 15px
+			width: 1px

@@ -1,0 +1,22 @@
+.modal#modal
+	.background
+	.banner
+		img(data-number='1', src="assets/img/01.png", alt="").active
+		img(data-number='2', src="assets/img/02.png", alt="")
+		img(data-number='3', src="assets/img/03.png", alt="")
+
+		img(data-number='4', src="assets/img/04.png", alt="")
+		img(data-number='5', src="assets/img/05.png", alt="")
+		img(data-number='6', src="assets/img/06.png", alt="")
+
+
+		.thumbs
+			button(data-number='1')#thumb1.active
+			button(data-number='2')#thumb2
+			button(data-number='3')#thumb3
+			button(data-number='4')#thumb4
+			button(data-number='5')#thumb5
+			button(data-number='6')#thumb6
+
+		button(title="Clique para ver a imagem anterior").ctrl.left
+		button(title="Clique para ver a próxima imagem").ctrl.right

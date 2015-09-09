@@ -1,0 +1,43 @@
+section#location
+	.wrap
+		p.title O Residencial Green Park está localizado à 4 minutos do centro da cidade de Salto. 
+		p.subtitle OUTRAS DISTÂNCIAS - Clique aqui para visualizar a distância do GreenPark à outros pontos e cidades. 
+
+		.address
+			img(src='assets/img/location.png')
+			p RUA REMIGIO DALLA VECCHIA, 765 JARDIM PLANALTO - SALTO
+	#map
+
+section#contact
+	.wrap
+		p Para mais informações ou valores, fale conosco, estamos a disposição.
+		
+		form(data-form='#contact_form', onsubmit='send_form(this); egoi(this);  return false')#contact_form
+			.col1
+				div
+					input(type='text', id='name', name='name', required).text.name
+					label(for='name') Nome
+
+				div
+					input(type='email', id='email', name='email', data-form='#contact_form', required).text.email
+					label(for='email') Email
+
+				div
+					input(type='tel', id='phone', name='phone', required).text.phone
+					label(for='phone') Telefone
+
+
+			.col2
+				div
+					textarea(id='msg', name='msg', required).text.msg
+					label(for='msg') Mensagem
+
+				div
+					button.submit enviar
+
+		img(src='assets/img/dad-and-son.png').img
+
+		.footnote
+			img(src='assets/img/logo-greenpark-footer.png').greenpark
+			p GreenPark é um empreendimento idealizado e realizado pela empresa: Team Prime Empreendimentos.
+			img(src='assets/img/logo-teamprime.png').teamprime

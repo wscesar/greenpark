@@ -1,0 +1,10 @@
+http_path = ""
+css_dir = "assets/css"
+sass_dir = "assets/sass"
+jade_dir = "assets/jade"
+html_dir = "pages/"
+images_dir = "assets/img"
+javascripts_dir = "assets/js"
+output_style = :compressed
+relative_assets = true
+line_comments = false

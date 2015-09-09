@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'mano_negra';
+    src: url('WCManoNegraBta-webfont.eot');
+    src: url('WCManoNegraBta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WCManoNegraBta-webfont.woff') format('woff'),
+         url('WCManoNegraBta-webfont.ttf') format('truetype'),
+         url('WCManoNegraBta-webfont.svg#wc_mano_negra_btaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mano_negra_bold';
+    src: url('WCManoNegraBoldBta-webfont.eot');
+    src: url('WCManoNegraBoldBta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WCManoNegraBoldBta-webfont.woff') format('woff'),
+         url('WCManoNegraBoldBta-webfont.ttf') format('truetype'),
+         url('WCManoNegraBoldBta-webfont.svg#wc_mano_negra_btabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

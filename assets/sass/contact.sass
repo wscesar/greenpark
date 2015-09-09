@@ -1,0 +1,153 @@
+#location
+	background: #d6d6d6
+	padding-top: 248px
+
+	p
+		text-align: center
+		width: 100%
+
+		&.title
+			font-size: 25.55px
+		
+		&.subtitle
+			font-size: 17px
+
+	.address
+		width: 692px
+		margin: 35px auto 75px
+		height: 129px
+		
+		img
+			float: left
+
+		p
+			float: left
+			display: block
+			margin: 42px 0 0 24px
+			text-align: left
+			font-size: 27px
+			width: 452px
+
+	#map
+		width: 100%
+		height: 460px
+
+
+#contact
+	height: 994px
+	background: #d6d6d6
+
+	p
+		font-size: 25.55px
+		float: left
+		margin: 126px 0 26px
+
+	.img
+		position: absolute
+		bottom: 0
+		left: 78px
+
+	.footnote
+		position: absolute
+		bottom: 0
+		right: 118px	
+		width: 240px
+
+		.greenpark
+			margin: 0 0 0 2px
+
+		.teamprime
+			margin: 0
+
+		p
+			margin: 28px 0 24px
+			line-height: 1.3
+			font-size: 1rem
+
+	form
+		display: block
+		float: left
+		margin-bottom: 10px
+		width: 100%
+
+		.col1
+			float: left
+			margin-right: 31px
+			width: 318px
+
+		.col2
+			float: left
+			width: 705px
+
+		label
+			color: #656565
+			left: 8px
+			position: absolute
+			top: 8px
+			+transition(0.5s)
+			width: 100%
+			padding: 0 5px 2px
+
+			&.fixed
+				top: -7px
+				left: 0
+				font-size: 0.8rem
+				color: #fff
+				background: #656565
+				height: auto
+				width: 100%
+
+		.text
+			background: none
+			border: solid 1px #656565
+			color: #656565
+			font-size: 1rem
+			margin: 0 0 12px
+			padding: 5px
+			width: 100%
+
+
+			&:focus + label
+				@extend label.fixed
+
+		input.text
+			height: 34px
+
+		textarea.text
+			height: 126px
+			resize: none
+
+
+
+.submit
+	background: #656565
+	color: #fff
+	cursor: pointer
+	float: right
+	height: 44px
+	min-width: 90px
+	padding: 0 19px
+	font-weight: 700
+	text-transform: uppercase
+	+transition(1s)
+
+	&.hide
+		opacity: 0
+
+	&.loading
+		background: transparent url(../img/loading.gif) 52px center no-repeat
+	
+	&.error, &.alert, &.success
+		background: transparent
+		cursor: default
+		padding: 0
+		text-transform: none
+	
+	&.success
+		color: $green
+
+	&.alert
+		color: $orange
+
+	&.error
+		color: $red

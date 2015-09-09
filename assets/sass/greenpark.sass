@@ -1,0 +1,109 @@
+#greenpark
+	background: #d6d6d6
+	text-align: center
+	color: #363636
+	padding-top: 186px
+	min-height: 880px
+
+	.wrap
+		height: 50%
+		background: url(../img/bg-greenpark.png) center no-repeat
+
+	.logo
+		margin: 0 auto 27px
+	
+	h2
+		font-size: 28.29px
+		margin: 45px auto
+
+	figure
+		display: block
+		font-size: 17px
+		margin-bottom: 28px
+
+		img
+			display: inline-block
+			margin: 0 1px
+
+	.text
+		font-size: 17px
+		text-align: justify
+		width: calc(100% - 40px)
+
+#blueprint
+	background: #c9c9c9
+	padding: 182px 0 80px
+	min-height: 880px
+
+	.wrap
+		width: 591px
+
+	figure
+		font-size: 12.94px
+		margin: auto
+
+		img
+			display: none 
+			width: 591px
+			height: 467px
+
+			&.active
+				display: block
+
+		figcaption
+			margin: 18px 0 3px
+			text-align: right
+			font-weight: bold
+			font-style: italic
+
+	.ctrl
+		cursor: pointer
+		position: absolute
+		top: 236px
+		width: 32px
+		height: 112px
+
+		&.left
+			background: transparent url(../img/arrow.png) 0 0
+			left: - 162px
+
+		&.right
+			background: transparent url(../img/arrow.png) 32px 0
+			right: - 162px
+
+	.thumbs
+		height: 36px
+		margin: 0 auto 22px
+
+		button
+			background: transparent
+			cursor: pointer
+			font-size: 25.55px
+			+transition(0.5s)
+
+			&.left
+				float: left
+
+			&.right
+				float: right
+
+			&::after
+				background: #e9731e
+				bottom: -8px
+				content: ''
+				display: block
+				left: 0
+				height: 4px
+				position: absolute
+				width: 0px
+				+transition(width 0.5s)
+
+			&.active
+				text-shadow: 0 0 1px
+				
+				&::after
+					width: 47px
+
+			&:hover
+				@extend .active
+				

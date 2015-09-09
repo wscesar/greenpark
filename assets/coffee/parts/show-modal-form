@@ -1,0 +1,17 @@
+###===============================================================
+=            Show modal form when user clic on button            =
+===============================================================###
+do ->
+  document.querySelector('#allotments a').onclick =  ->
+    
+    displayed = document.querySelector('.modal.form').getAttribute('data-displayed')
+    
+    $('.modal.form').css 'display', 'block'
+    $('.modal.background').css 'display', 'block'
+
+    setTimeout (->
+      # displayed.classList.add('show')
+      # displayed.setAttribute('data-displayed', 'true')
+      $('.modal.form').attr('data-displayed', 'true').addClass 'show'
+      $('.modal.background').addClass 'show'
+    ), 100
