@@ -1,22 +1,54 @@
-.modal#modal
-	.background
-	.banner
-		img(data-number='1', src="assets/img/01.png", alt="").active
-		img(data-number='2', src="assets/img/02.png", alt="")
-		img(data-number='3', src="assets/img/03.png", alt="")
-
-		img(data-number='4', src="assets/img/04.png", alt="")
-		img(data-number='5', src="assets/img/05.png", alt="")
-		img(data-number='6', src="assets/img/06.png", alt="")
+.modal.background
 
 
-		.thumbs
-			button(data-number='1')#thumb1.active
-			button(data-number='2')#thumb2
-			button(data-number='3')#thumb3
-			button(data-number='4')#thumb4
-			button(data-number='5')#thumb5
-			button(data-number='6')#thumb6
+.modal.banner
+	img(data-number='1', src="assets/img/01.png", alt="").active
+	img(data-number='2', src="assets/img/02.png", alt="")
+	img(data-number='3', src="assets/img/03.png", alt="")
 
-		button(title="Clique para ver a imagem anterior").ctrl.left
-		button(title="Clique para ver a próxima imagem").ctrl.right
+	img(data-number='4', src="assets/img/04.png", alt="")
+	img(data-number='5', src="assets/img/05.png", alt="")
+	img(data-number='6', src="assets/img/06.png", alt="")
+
+	.thumbs
+		button(data-number='1')#thumb1.active
+		button(data-number='2')#thumb2
+		button(data-number='3')#thumb3
+		button(data-number='4')#thumb4
+		button(data-number='5')#thumb5
+		button(data-number='6')#thumb6
+
+	button(title="Clique para ver a imagem anterior").ctrl.left
+	button(title="Clique para ver a próxima imagem").ctrl.right
+
+
+.modal.form(data-displayed='false')
+	.title 
+		p.bold A Deltalog liga pra você
+		p Preencha as informações abaixo e nosso consultor entrará em contato
+	
+	.shake_title
+		p.bold Só um minuto
+		p Gostaria de receber mais informações sem compromisso? Preencha as informações abaixo e nosso consultor entrará em contato
+
+	//- img(src='assets/img/logo.svg', width='50%').logo
+
+	form(data-form='#modal_form', onsubmit='send_form(this); egoi(this);  return false')#modal_form
+		div
+			input(type='text', id='name2', name='name', required).text.name
+			label(for='name2') Nome
+
+		div
+			input(type='email', id='email2', name='email', data-form='#modal_form', required).text.email
+			label(for='email2') Email
+
+		div
+			input(type='tel', id='phone2', name='phone', required).text.phone
+			label(for='phone2') Telefone
+
+		div
+			textarea(id='msg2', name='msg', required).text.msg
+			label(for='msg2') Mensagem
+
+		div
+			button.submit enviar

@@ -1,0 +1,81 @@
+#blueprint
+	background: #c9c9c9
+	padding: 182px 0 80px
+	min-height: 880px
+
+	.wrap
+		width: 591px
+
+	figure
+		font-size: 12.94px
+		margin: auto
+		width: 100%
+		height: 467px
+
+		img
+			display: none 
+			top: 50%
+			width: 100%
+			+transform(translateY(-50%))
+
+			&.active
+				display: block
+
+		figcaption
+			font-weight: bold
+			font-style: italic
+			position: absolute
+			right: 0
+			bottom: 0
+
+	.ctrl
+		cursor: pointer
+		position: absolute
+		top: 236px
+		width: 32px
+		height: 112px
+
+		&.left
+			background: transparent url(../img/arrow.png) 0 0
+			left: - 162px
+
+		&.right
+			background: transparent url(../img/arrow.png) 32px 0
+			right: - 162px
+
+	.thumbs
+		height: 36px
+		margin: 0 auto 22px
+
+		button
+			background: transparent
+			cursor: pointer
+			font-size: 25.55px
+			+transition(0.5s)
+
+			&.left
+				float: left
+
+			&.right
+				float: right
+
+			&::after
+				background: #e9731e
+				bottom: -8px
+				content: ''
+				display: block
+				left: 0
+				height: 4px
+				position: absolute
+				width: 0px
+				+transition(width 0.5s)
+
+			&.active
+				text-shadow: 0 0 1px
+				
+				&::after
+					width: 47px
+
+			&:hover
+				@extend .active
+				

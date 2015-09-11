@@ -10,9 +10,9 @@ send_form = function(element) {
   
   submit.setAttribute('disabled', 'true');
   submit.innerHTML = '';
-  submit.classList.add('hide');
+  submit.style.opacity = 0;
   submit.classList.add('loading');
-  submit.classList.remove('hide');
+  submit.removeAttribute('style');
   
   request = new XMLHttpRequest;
   request.open('POST', 'inc/send-contact.php', true);
@@ -21,13 +21,12 @@ send_form = function(element) {
 
   request.onload = function() {
 
-    if (request.status >= 200 && request.status < 400) {
+    if ( this.status >= 200 && this.status < 400 ) {
 
       all_submits = document.querySelectorAll('form .submit');
-      alert(request.status);
 
       //set data-displayed on modal form to true
-      // document.querySelector('.modal .form').setAttribute('data-displayed', 'true');
+      document.querySelector('.modal .form').setAttribute('data-displayed', 'true');
 
       for ( var i = 0 ; i < all_submits.length ; i++ ) {
 
@@ -36,16 +35,15 @@ send_form = function(element) {
         
         //disable all submit button
         all_submits[i].setAttribute('disabled', 'true');
-        all_submits[i].classList.add('hide');
+        all_submits[i].style.opacity = 0;
         all_submits[i].classList.add('success');
         all_submits[i].innerHTML = 'Sua mensagem enviada com sucesso, obrigado';
         all_submits[i].classList.remove('loading');
-        all_submits[i].classList.remove('hide');
+        all_submits[i].removeAttribute('style');
       }
 
     } else {
-      alert(request.status);
-      // alert('Erro ao enviar email, arquivo send-contact não encontrado, informe o administrador do site');
+      alert('Erro ao enviar email, arquivo send-contact não encontrado, informe o administrador do site');
     }
 
   }
@@ -60,6 +58,7 @@ egoi = function(element) {
   form    = element.getAttribute('data-form')
   name    = document.querySelector(form + ' .name').value
   email   = document.querySelector(form + ' .email').value
+ 
   cliente = '133248'
   lang    = 'br'
   lista   = '3'

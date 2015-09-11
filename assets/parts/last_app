@@ -117,7 +117,7 @@ send_form = (element) ->
   email       = document.querySelector(form + ' .email').value
   phone       = document.querySelector(form + ' .phone').value
   msg         = document.querySelector(form + ' .msg').value
-  data        = 'name=' + name + '&email=' + email + '&phone=' + phone + '&msg=' + msg + '&form=' + form
+  data        = 'name=' + name + '&email=' + email + '&phone=' + phone + '&msg=' + msg
   
   submit.setAttribute 'disabled', 'true'
   submit.innerHTML = ''
@@ -598,3 +598,5 @@ document.addEventListener 'touchstart', handleTouchStart, false
 document.addEventListener 'touchmove', handleTouchMove, false
 xDown = null
 yDown = null
+Status API Training Shop Blog About Pricing
+© 2015 GitHub, Inc. Terms Privacy Security Contact Help

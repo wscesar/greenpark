@@ -42,15 +42,16 @@
     width: 100%
 
 
-    .background
-        background: rgba(0,0,0,0.5)
+    &.background
+        background: $theme-green
         height: 100%
+        opacity: 0.9
         width: 100%
 
     &.active
         display: block
 
-    .form, .banner, .table
+    &.form, &.banner, &.table
         background: $white
         border-radius: 2px
         left: 50%
@@ -58,41 +59,9 @@
         top: 50%
         +transform(translateY(-50%) translateX(-50%))
 
-    &.table
-        border: solid 1px #ccc
-        box-shadow: 20px 20px 0px $white, -20px -20px 0px $white, -20px 20px 0px $white, 20px -20px 0px $white, -40px 40px 40px #333, 40px 40px 40px #333
-
-        ul
-            width: auto
-            display: none
-
-            &.show
-                display: block
-
-            li
-                background: #fff
-                padding: 15px
-                width: 300px
-                
-                &:nth-child(odd)
-                    background: #eee
-
-                &.title
-                    background: $blue
-                    color: #fff
-                    padding: 20px 0 
-                    text-align: center
-                
-                span
-                    display: inline-block
-                    
-                    &.value
-                        float: right
-
-    
     &.form
         border: none
-        box-shadow: 10px 10px 0 $white, -10px -10px 0 $white, -10px 10px 0 $white, 10px -10px 0 $white, -20px 20px 20px #333, 20px 20px 20px #333
+        box-shadow: 10px 10px 0 $white, -10px -10px 0 $white, -10px 10px 0 $white, 10px -10px 0 $white, -20px 20px 20px $theme-black, 20px 20px 20px $theme-black
         height: auto
         padding: 50px
         width: 600px
@@ -160,11 +129,12 @@
                 height: 126px
                 resize: none
 
-    .banner
+    &.banner
         border: solid 1px #ccc
         background: $white url(../img/loading.gif) center no-repeat
-        box-shadow: 10px 10px 0px $white, -10px -10px 0px $white, -10px 10px 0px $white, 10px -10px 0px $white, -20px 20px 20px #333, 20px 20px 20px #333
+        box-shadow: 10px 10px 0px $white, -10px -10px 0px $white, -10px 10px 0px $white, 10px -10px 0px $white, -20px 20px 20px $theme-black, 20px 20px 20px $theme-black
         width: 800px
+        height: 440px
 
         img
             width: 100%
@@ -224,12 +194,45 @@
             button
                 background: $white
                 border-radius: 100%
+                cursor: pointer
                 display: inline-block
                 height: 22px
                 margin: 0 10px
+                opacity: 0.7
                 width: 22px
-                cursor: pointer
                 +transition(0.5s)
                 
                 &.active, &:hover
                     background: $theme-green
+
+
+    // &.table
+    //     border: solid 1px #ccc
+    //     box-shadow: 20px 20px 0px $white, -20px -20px 0px $white, -20px 20px 0px $white, 20px -20px 0px $white, -40px 40px 40px $theme-black, 40px 40px 40px $theme-black
+
+    //     ul
+    //         width: auto
+    //         display: none
+
+    //         &.show
+    //             display: block
+
+    //         li
+    //             background: #fff
+    //             padding: 15px
+    //             width: 300px
+                
+    //             &:nth-child(odd)
+    //                 background: #eee
+
+    //             &.title
+    //                 background: $blue
+    //                 color: #fff
+    //                 padding: 20px 0 
+    //                 text-align: center
+                
+    //             span
+    //                 display: inline-block
+                    
+    //                 &.value
+    //                     float: right
