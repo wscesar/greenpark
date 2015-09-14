@@ -4,15 +4,6 @@ header
 	z-index: 3
 	position: fixed
 
-	&.fixed
-		height: 63.5px
-
-		.logo
-			height: 44.5px
-
-		.border
-			height: 2px
-
 	.border
 		height: 11px
 		float: left
@@ -59,15 +50,16 @@ header
 		top: 50%
 		+transform(translateY(-50%))
 
+	button
+		display: none
+		background: transparent
+		
 	nav
 		float: right
 		top: 50%
 		+transform(translateY(-50%))
 		width: auto
 
-		button
-			display: none
-			background: transparent
 
 		a
 			color: $theme-green

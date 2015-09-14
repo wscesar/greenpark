@@ -2,9 +2,8 @@
 <header>
   <div class="border"><span class="span1"></span><span class="span2"></span><span class="span3"></span><span class="span4"></span><span class="span5"></span><span class="span6"></span><span class="span7"></span><span class="span8"></span><span class="span9"></span></div>
   <div class="wrap"><img src="assets/img/logo.png" class="logo"/>
-    <nav><a data-section="#differentials">DIFERENCIAIS</a><span></span><a data-section="#greenpark">GREENPARK</a><span></span><a data-section="#appartments">APARTAMENTOS</a><span></span><a data-section="#video">VÍDEO</a><span></span><a data-section="#location">LOCALIZAÇÃO</a><span></span><a data-section="#contact">VENDAS</a><span></span><a data-section="#work-progress">OBRAS</a>
-      <button> <span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></button>
-    </nav>
+    <button> <span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></button>
+    <nav><a data-section="#differentials">DIFERENCIAIS</a><span></span><a data-section="#greenpark">GREENPARK</a><span></span><a data-section="#appartments">APARTAMENTOS</a><span></span><a data-section="#video">VÍDEO</a><span></span><a data-section="#location">LOCALIZAÇÃO</a><span></span><a data-section="#contact">VENDAS</a><span></span><a data-section="#work-progress">OBRAS</a></nav>
   </div>
 </header>
 <section id="banner">

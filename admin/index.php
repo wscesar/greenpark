@@ -1,3 +1,12 @@
+<script>
+	login = sessionStorage.getItem('login');
+
+	if( login != 'true' ) {
+		window.location = 'login.php';
+	}
+</script>
+
+
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -9,5 +18,6 @@
 		<input type='file' name='foto'>
 		<input type='submit'>
 	</form>
+	<img src="../assets/img/work-progress.png" alt="">
 </body>
 </html>

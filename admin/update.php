@@ -39,7 +39,6 @@
 	    // Something else went wrong, unrelated to the Tinify API.
 	}
 
-
+	echo '<script>window.location = "index.php"</script>';
 ?>
 
-<img src="../assets/img/work-progress.png" alt="">

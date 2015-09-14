@@ -38,17 +38,34 @@
     <script src='assets/js/scroll.js'></script>
     <script src='assets/js/modal.js'></script>
     <script src='assets/js/map.js'></script>
-    
-    
+    <script src='assets/js/swipe.js'></script>
 
     <!-- Analytics 
-    <script src='assets/js/vendor/analytics.js'></script>
+        <script src='assets/js/vendor/analytics.js'></script>
     -->
 
 
 
 <script>
+    header = document.querySelector('header');
+    menu_button = document.querySelector('header button');
+    responsive_nav_a = document.querySelectorAll('header nav a');
 
+    menu_button.addEventListener( 'click' , function() {
+
+        header.classList.add('active');
+
+    });
+
+    for( var i = 0 ; i < nav_a.length ; i++ ) {
+
+        nav_a[i].addEventListener( 'click' , function() {
+
+            header.classList.remove('active');
+
+        });
+
+    }
 
 </script>
 

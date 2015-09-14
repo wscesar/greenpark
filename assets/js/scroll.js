@@ -2,21 +2,19 @@ nav_a = document.querySelectorAll('nav a');
 // to_top = document.querySelector('.icon-top_arrow');
 header_height = document.querySelector('header').offsetHeight;
 
-// to_top.onclick = ->
+// to_top.addEventListener('click', ->
 //   $('html, body').stop().animate { scrollTop: 0 }, 1000
 
 
 for ( var i = 0 ; i < nav_a.length ; i++ ) {
 
-  nav_a[i].onclick = function() {
+  nav_a[i].addEventListener('click', function() {
     section = this.getAttribute('data-section');
     goTo = document.querySelector(section).offsetTop;
     goTo = goTo - header_height;
 
     $('html, body').stop().animate({ scrollTop: goTo }, 1000);
-
-    return false;
-  }
+  });
 
 
 
