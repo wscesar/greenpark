@@ -2,8 +2,9 @@
 <header>
   <div class="border"><span class="span1"></span><span class="span2"></span><span class="span3"></span><span class="span4"></span><span class="span5"></span><span class="span6"></span><span class="span7"></span><span class="span8"></span><span class="span9"></span></div>
   <div class="wrap"><img src="assets/img/logo.png" class="logo"/>
-    <button> <span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></button>
-    <nav><a data-section="#differentials">DIFERENCIAIS</a><span></span><a data-section="#greenpark">GREENPARK</a><span></span><a data-section="#appartments">APARTAMENTOS</a><span></span><a data-section="#video">VÍDEO</a><span></span><a data-section="#location">LOCALIZAÇÃO</a><span></span><a data-section="#contact">VENDAS</a><span></span><a data-section="#work-progress">OBRAS</a></nav>
+    <button><span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></button>
+    <nav><a data-section="#differentials">DIFERENCIAIS</a><span></span><a data-section="#greenpark">GREENPARK</a><span></span><a data-section="#appartments">APARTAMENTOS</a><span></span><a data-section="#video">VÍDEO</a><span></span><a data-section="#location">LOCALIZAÇÃO</a><span></span><a data-section="#contact">VENDAS</a><span></span><a data-section="#work-progress">OBRAS</a>
+    </nav>
   </div>
 </header>
 <section id="banner">
@@ -51,7 +52,7 @@
     </div>
     <button class="ctrl left"></button>
     <button class="ctrl right"></button>
-    <figure><img data-number="1" src="assets/img/blueprint-01.png" alt="Planta baixa do Apartamento de 65m² no Condominio Residencial Greenpark em Salto, interior de São Paulo" class="active"/><img data-number="2" src="assets/img/blueprint-02.png" alt="Planta baixa do Apartamento de 74m² no Condominio Residencial Greenpark em Salto, interior de São Paulo"/>
+    <figure><span>Planta de 64m2	</span><img data-number="1" src="assets/img/blueprint-01.png" alt="Planta baixa do Apartamento de 65m² no Condominio Residencial Greenpark em Salto, interior de São Paulo" class="active"/><span>Planta de 64m2				</span><img data-number="2" src="assets/img/blueprint-02.png" alt="Planta baixa do Apartamento de 74m² no Condominio Residencial Greenpark em Salto, interior de São Paulo"/>
       <figcaption>Imagens ilustrativas do Residencial GreenPark</figcaption>
     </figure><img src="assets/img/logo-teamprime.png"/>
   </div>
@@ -86,27 +87,39 @@
     <p>Para mais informações ou valores, fale conosco, estamos a disposição.</p>
     <form data-form="#contact_form" onsubmit="send_form(this); egoi(this);  return false" id="contact_form">
       <div class="col1">
-        <div>
+        <div class="textbox">
           <input type="text" id="name" name="name" required="required" class="text name"/>
           <label for="name">Nome</label>
         </div>
-        <div>
+        <div class="textbox">
           <input type="email" id="email" name="email" data-form="#contact_form" required="required" class="text email"/>
           <label for="email">Email</label>
         </div>
-        <div>
-          <input type="tel" id="phone" name="phone" required="required" class="text phone"/>
+        <div class="textbox">
+          <input type="tel" id="phone" name="phone" class="text phone"/>
           <label for="phone">Telefone</label>
         </div>
       </div>
       <div class="col2">
-        <div>
-          <textarea id="msg" name="msg" required="required" class="text msg"></textarea>
+        <div class="textbox">
+          <textarea id="msg" name="msg" class="text msg"></textarea>
           <label for="msg">Mensagem</label>
         </div>
         <button class="submit">enviar</button>
       </div>
-    </form><img src="assets/img/dad-and-son.png" class="img"/>
+    </form>
+    <div class="contact-details">
+      <div class="col1 online"><img src="assets/img/mail.png"/>
+        <div class="text">
+          <p class="bold">vendas / informações</p><a href="mailto:contato@teamprime.com.br">contato@teamprime.com.br</a><a href="http://www.teamprime.com.br">www.teamprime.com.br</a>
+        </div>
+      </div>
+      <div class="col1 offline"><img src="assets/img/phone.png"/>
+        <div class="text">
+          <p class="bold">vendas / informações</p><a href="tel:1140280805">(11) 4028.0805</a><a href="tel:1128401824">(11) 2840.1824</a>
+        </div>
+      </div>
+    </div><img src="assets/img/dad-and-son.png" class="img"/>
     <div class="footnote"><img src="assets/img/logo-greenpark-footer.png" class="greenpark"/>
       <p>GreenPark é um empreendimento idealizado e realizado pela empresa: Team Prime Empreendimentos.</p><img src="assets/img/logo-teamprime.png" class="teamprime"/>
     </div>
@@ -121,7 +134,8 @@
   </div>
 </footer>
 <div class="modal background"></div>
-<div class="modal banner"><img data-number="1" src="assets/img/01.png" alt="" class="active"/><img data-number="2" src="assets/img/02.png" alt=""/><img data-number="3" src="assets/img/03.png" alt=""/><img data-number="4" src="assets/img/04.png" alt=""/><img data-number="5" src="assets/img/05.png" alt=""/><img data-number="6" src="assets/img/06.png" alt=""/>
+<div class="modal banner">
+  <div class="close-button">&times;</div><img data-number="1" src="assets/img/01.png" alt="" class="active"/><img data-number="2" src="assets/img/02.png" alt=""/><img data-number="3" src="assets/img/03.png" alt=""/><img data-number="4" src="assets/img/04.png" alt=""/><img data-number="5" src="assets/img/05.png" alt=""/><img data-number="6" src="assets/img/06.png" alt=""/>
   <div class="thumbs">
     <button data-number="1" id="thumb1" class="active"></button>
     <button data-number="2" id="thumb2"></button>

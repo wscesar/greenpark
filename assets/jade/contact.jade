@@ -10,30 +10,50 @@ section#location
 
 section#contact
 	.wrap
+
 		p Para mais informações ou valores, fale conosco, estamos a disposição.
+
 		
 		form(data-form='#contact_form', onsubmit='send_form(this); egoi(this);  return false')#contact_form
 			.col1
-				div
+				div.textbox
 					input(type='text', id='name', name='name', required).text.name
 					label(for='name') Nome
 
-				div
+				div.textbox
 					input(type='email', id='email', name='email', data-form='#contact_form', required).text.email
 					label(for='email') Email
 
-				div
-					input(type='tel', id='phone', name='phone', required).text.phone
+				div.textbox
+					input(type='tel', id='phone', name='phone').text.phone
 					label(for='phone') Telefone
 
 
 			.col2
-				div
-					textarea(id='msg', name='msg', required).text.msg
+				div.textbox
+					textarea(id='msg', name='msg').text.msg
 					label(for='msg') Mensagem
 
 				button.submit enviar
 
+		.contact-details
+			.col1.online
+				img(src='assets/img/mail.png')
+
+				.text
+					p.bold vendas / informações
+					a(href='mailto:contato@teamprime.com.br') contato@teamprime.com.br
+					a(href='http://www.teamprime.com.br') www.teamprime.com.br
+
+			.col1.offline
+				img(src='assets/img/phone.png')
+
+				.text
+					p.bold vendas / informações
+					a(href='tel:1140280805') (11) 4028.0805
+					a(href='tel:1128401824') (11) 2840.1824
+
+		
 		img(src='assets/img/dad-and-son.png').img
 
 		.footnote

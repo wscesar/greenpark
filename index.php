@@ -10,7 +10,7 @@
     <title>Condomínio Residencial Greenpark</title>
 
     <!-- Base Link -->
-    <base href='http://localhost/greenpark/'>
+    <base href='http://192.168.1.103:8000/greenpark/'>
 
     <!-- Favicon -->
     <link rel='icon' href='assets/img/favicon.ico'>
@@ -48,6 +48,7 @@
 
 <script>
     header = document.querySelector('header');
+    logo = document.querySelector('header .logo');
     menu_button = document.querySelector('header button');
     responsive_nav_a = document.querySelectorAll('header nav a');
 

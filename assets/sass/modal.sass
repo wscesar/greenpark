@@ -132,9 +132,22 @@
     &.banner
         border: solid 1px #ccc
         background: $white url(../img/loading.gif) center no-repeat
-        box-shadow: 10px 10px 0px $white, -10px -10px 0px $white, -10px 10px 0px $white, 10px -10px 0px $white, -20px 20px 20px $theme-black, 20px 20px 20px $theme-black
-        width: 800px
-        height: 440px
+        border: solid 10px $white
+        box-shadow: -10px 10px 10px $theme-black, 10px 10px 10px $theme-black
+        width: 768px
+        height: auto
+
+        .close-button
+            color: $red
+            cursor: pointer
+            font-size: 2rem
+            font-weight: bold
+            position: absolute
+            right: 8px
+            text-align: center
+            top: 0px
+            z-index: 99
+
 
         img
             width: 100%

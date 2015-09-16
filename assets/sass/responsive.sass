@@ -1,14 +1,14 @@
-@media only screen and (min-width: 960px)
-	#banner,
-	#differentials,
-	#greenpark,
-	#blueprint,
-	#appartments,
-	#video,
-	#contact,
-	#work-progress
-		padding: 40px 0
-		min-height: calc(100% - 127px)
+// @media only screen and (min-width: 960px)
+// 	#banner,
+// 	#differentials,
+// 	#greenpark,
+// 	#blueprint,
+// 	#appartments,
+// 	#video,
+// 	#contact,
+// 	#work-progress
+// 		padding: 40px 0
+// 		min-height: calc(100% - 127px)
 
 @media only screen and (min-width: 960px) and (max-width: 1139px)
 	.wrap
@@ -27,7 +27,7 @@
 	#appartments figure img
 		width: 308px
 
-	#contact form .col2
+	#contact .col2
 		width: 611px
 
 	#work-progress .img
@@ -49,8 +49,12 @@
 	#appartments figure img
 		width: 244px
 
-	#contact form .col2
-		width: 419px
+	#contact
+		.col2
+			width: 419px
+
+		.img
+			margin: 0 80px 0 -7vw
 
 	#work-progress
 		padding: 50px 0
@@ -76,15 +80,11 @@
 		width: 100%
 		text-align: left
 		
-	// #greenpark figure img
-	// 	width: 49%
-	// 	margin: 0 0.5%
-
 	#appartments
 		padding: 50px 0
 
-	#appartments figure img
-		width: 148px
+		figure img
+			width: 148px
 
 	#video
 		padding: 50px 0
@@ -93,25 +93,44 @@
 			font-size: 57px
 
 		.video
+			height: 360px
 			width: 100%
-			height: calc(480px / 4 * 3)
 
 	#contact
-		height: 560px
+		min-height: 560px
+		display: flex
 
-	#contact p
-		margin: 26px 0
-	
-	#contact form .col1,
-	#contact form .col2
-		width: 100%
+		.background
+			width: 100%
+			height: 100%
 
-	#contact img
-		opacity: 0.05
-		z-index: 0
+		p
+			margin: 26px 0
 
-	#contact .footnote
-		display: none
+		.col1, .col2
+			width: 100%
+
+		.contact-details
+			margin-bottom: 0
+
+			.col1, .col2
+				margin-bottom: 40px
+
+		.img
+			bottom: 0
+			opacity: 0.2
+			position: absolute
+			right: -250px
+			width: 80%
+			z-index: 0
+			+transform(rotateY(180deg))
+
+		.footnote
+			.greenpark
+				width: 130px
+
+			.teamprime
+				display: none
 
 	#work-progress
 		padding: 50px 0
@@ -153,6 +172,9 @@
 		.logo
 			display: none
 
+		.leaf
+			display: block
+
 		.border
 			height: 2px
 			width: 200%
@@ -190,6 +212,7 @@
 			display: block
 			height: 40px
 			position: absolute
+			top: 0
 			width: 100%
 			+transition(1s)
 
@@ -231,8 +254,36 @@
 	#greenpark 
 		padding: 50px 0
 
-	#blueprint .wrap
-		width: calc(100vw * 0.78)
+		figure img
+			width: 90%
+
+	#blueprint
+		.wrap
+			width: calc(100vw * 0.78)
+		.ctrl, .thumbs
+			display: none
+
+		.wrap
+			width: 100%
+
+			> img
+				display: none
+		
+		figure
+			height: auto
+
+			img
+				display: block
+				margin: 10px 0 20px
+				top: auto
+				+transform(translateY(0))
+
+			figcaption
+				position: relative
+
+			span
+				display: block
+				font-weight: bold
 
 	#location
 		padding: 50px 0 0
@@ -251,9 +302,27 @@
 			img
 				display: none
 
+	.modal.banner
+		width: 90%
+
+		.thumbs
+			display: none
+
 
 
 @media only screen and (max-width: 479px)
+	#banner,
+	#greenpark,
+	#differentials,
+	#blueprint,
+	#appartments,
+	#location,
+	#video,
+	#contact,
+	#work-progress
+		padding: 20px 0
+		// min-height: calc(100vh - 40px)
+
 	.wrap
 		width: 100%
 		padding: 0 10px
@@ -263,38 +332,52 @@
 			margin-top: 31px
 			font-size: 22px
 
-
-	#differentials,
-	#greenpark,
-	#appartments,
-	#video,
-	#contact,
-	#work-progress
-		padding: 20px 0
-		// height: calc(100vh - 40px)
-
-	#banner,
-	#blueprint,
-	#video,
-	#location
-		height: calc(100vh - 40px)
-
 	#differentials
+		font-size: 1rem
+
 		.title
-			font-size: 32px
+			font-size: 2rem
 
-		.icons figure 
-			width: 25%
+		.icons
+			margin-top: 20px
 
-			img
+			figure 
+				display: block
+				float: left
+				margin: 0 0 10px
 				width: 100%
 
+				img
+					display: block
+					float: left
+					width: 2rem
+
+
+				figcaption
+					display: block
+					float: left
+					font-size: 1rem
+					left: 0
+					margin: 0.5rem
+					text-align: left
+					width: auto
+					+transform(translateY(0))
+
+
 	#greenpark
+		h2
+			font-size: 1.2rem
+			margin-bottom: 20px
+
 		.text
 			width: 100%
+			text-align: left
 
-		figure img
-			width: 49%
+		figure
+			img
+				width: 49%
+			figcaption
+				font-size: 0.7rem
 
 	#appartments
 		.title
@@ -307,9 +390,9 @@
 		figure img,
 		figure figcaption
 			float: none
-			max-width: 339px
-			margin: 18px auto
 			height: auto
+			margin: 18px auto
+			max-width: 339px
 			width: 100%
 
 		figure img.margin
@@ -318,48 +401,86 @@
 	#location
 		padding: 0
 
-		.wrap
+		#map:after
+			position: absolute
+			width: 100%
+			height: 100%
+			content: ''
+
+		.wrap > p
 			display: none
+
+		.address
+			margin: 15px 0
+			height: 28px
+			float: left
+			
+			p
+				font-size: 1rem
+				font-weight: bold
+
 		
 		#map
-			height: calc(100vh - 40px)
+			height: calc(100vh - 68px)
 
 	#video
-		p
-			display: none
-		
-			&.title
-				font-size: 26px
-				display: block
+		p.title
+			display: block
+			font-size: 26px
 
 		.video
-			width: 100%
-			height: calc(100vw / 4 * 3)
+			height: auto
+			height: calc(100% * 0.75)
 			margin: 10px 0 0
+			width: 100%
 
 	#contact
-		height: auto
+		form 
+			textarea.text
+				height: 64px
+			
+			.submit
+				width: 100%
+				text-align: center
 
-		p
+		.wrap > p
 			font-size: 1rem
 			margin: 18px auto
 
-		form .col1,
-		form .col2
-			width: 100%
-
-		img
-			opacity: 0.05
-			z-index: 0
-
-		.footnote
+		.img, .footnote
 			display: none
 
+		.col1, .col2
+			width: 100%
+
+		.contact-details
+			float: none
+			margin: 20px 0 0
+			text-align: center
+
+			.col1
+				margin: 0 0 20px
+				float: none
+				display: inline-block
+				text-align: left
+				width: auto
+
+				img
+					float: left
+					margin-top: 2vw
+					width: calc(6vw * 1.2)
+
+				.text
+					width: 202px
+
+					p
+						display: none
+	
 	#work-progress
 		.img
-			width: 100%
-			margin-left: 0
 			height: auto
+			margin: 0
+			width: 100%
 
 		.text
 			margin-top: 28px
@@ -367,7 +488,8 @@
 			width: 100%
 
 			img
-				width: 100%
+				margin: 20px auto
+				width: 80%
 
 			p
 				display: none
@@ -379,6 +501,77 @@
 			.br:first-of-type
 				display: none
 
+
+
+
 @media only screen and (max-width: 319px)
+	#differentials
+
+		.icons figure 
+			img
+				width: 1rem
+
+			figcaption
+				font-size: 0.8rem
+				margin: 0.1rem
+
+
+	#appartments .title
+		font-size: 28px
+
 	#work-progress .text img
 		display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 480px)
+	#contact
+		.contact-details
+			.col1
+				img
+					display: none
+
+				.text
+					width: 100%
+
+					p
+						display: none
+
+					a
+						border-radius: 5px
+						display: block
+						font-size: 0.9rem
+						font-weight: bold
+						margin: 0 0 5px
+						padding: 5px 5px 5px 32px
+
+						&:before
+							display: block
+							margin-bottom: 5px
+							font-weight: normal
+				
+				&.online a		
+					background: #aaa  url(../img/mobile-mail-icon.png) no-repeat 5px center
+
+					&:nth-of-type(1):before
+						content: 'Clique para enviar um email: '
+					&:nth-of-type(2):before
+						content: 'Clique para acessar o site: '
+
+				&.offline a
+					background: #aaa  url(../img/mobile-phone-icon.png) no-repeat 5px center
+					padding: 5px 10px 5px 37px
+
+					&:before
+						content: 'Clique para ligar: '
+

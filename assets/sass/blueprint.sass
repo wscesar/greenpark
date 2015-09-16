@@ -1,7 +1,8 @@
 #blueprint
 	background: #c9c9c9
 	padding: 182px 0 80px
-	min-height: 880px
+	padding: 60px
+	min-height: calc(100% - 127px)
 
 	.wrap
 		width: 591px
@@ -12,6 +13,9 @@
 		width: 100%
 		height: 467px
 
+		span
+			display: none
+
 		img
 			display: none 
 			top: 50%
@@ -20,6 +24,8 @@
 
 			&.active
 				display: block
+
+
 
 		figcaption
 			font-weight: bold
