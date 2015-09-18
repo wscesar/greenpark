@@ -10,7 +10,7 @@
     <title>Condomínio Residencial Greenpark</title>
 
     <!-- Base Link -->
-    <base href='http://192.168.1.103:8000/greenpark/'>
+    <base href='http://192.168.1.230/greenpark/'>
 
     <!-- Favicon -->
     <link rel='icon' href='assets/img/favicon.ico'>
@@ -70,8 +70,11 @@
 
 </script>
 
-<script>
-
-</script>
+<style>
+#appartments figure span:hover img{
+-webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px);
+    
+}
+</style>
 </body>
 </html>

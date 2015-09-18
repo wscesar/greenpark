@@ -60,8 +60,8 @@
 <section id="appartments">
   <div class="wrap"><img src="assets/img/leaf.png" class="logo"/>
     <p class="title">Faz bem viver bem.</p>
-    <figure class="thumbs"><img data-number="1" src="assets/img/01.png" alt=""/><img data-number="2" src="assets/img/02.png" alt="" class="margin"/><img data-number="3" src="assets/img/03.png" alt=""/>
-      <figcaption>Morar perto do centro sem ter os transtornos diários do trânsito, poluição e barulho. Greenpark um bom lugar para morar ou investir.</figcaption><img data-number="4" src="assets/img/04.png" alt=""/><img data-number="5" src="assets/img/05.png" alt="" class="margin"/><img data-number="6" src="assets/img/06.png" alt=""/>
+    <figure class="thumbs"><span><img data-number="1" src="assets/img/modal-banner-img-01-thumb.png" alt=""/></span><span><img data-number="2" src="assets/img/modal-banner-img-02-thumb.png" alt="" class="margin"/></span><span><img data-number="3" src="assets/img/modal-banner-img-03-thumb.png" alt=""/></span>
+      <figcaption>Morar perto do centro sem ter os transtornos diários do trânsito, poluição e barulho. Greenpark um bom lugar para morar ou investir.</figcaption><span><img data-number="4" src="assets/img/modal-banner-img-04-thumb.png" alt=""/></span><span><img data-number="5" src="assets/img/modal-banner-img-05-thumb.png" alt="" class="margin"/></span><span><img data-number="6" src="assets/img/modal-banner-img-06-thumb.png" alt=""/></span>
     </figure>
   </div>
 </section>
@@ -135,7 +135,7 @@
 </footer>
 <div class="modal background"></div>
 <div class="modal banner">
-  <div class="close-button">&times;</div><img data-number="1" src="assets/img/01.png" alt="" class="active"/><img data-number="2" src="assets/img/02.png" alt=""/><img data-number="3" src="assets/img/03.png" alt=""/><img data-number="4" src="assets/img/04.png" alt=""/><img data-number="5" src="assets/img/05.png" alt=""/><img data-number="6" src="assets/img/06.png" alt=""/>
+  <div class="close-button">&times;</div><img data-number="1" src="assets/img/modal-banner-img-01-480.jpg" srcset="assets/img/modal-banner-img-01-960.jpg 480w 2x, assets/img/modal-banner-img-01-1280.jpg 960w" alt="" class="active"/><img data-number="2" src="assets/img/modal-banner-img-02-480.jpg" srcset="assets/img/modal-banner-img-02-960.jpg 480w 2x, assets/img/modal-banner-img-02-1280.jpg 960w" alt=""/><img data-number="3" src="assets/img/modal-banner-img-03-480.jpg" srcset="assets/img/modal-banner-img-03-960.jpg 480w 2x, assets/img/modal-banner-img-03-1280.jpg 960w" alt=""/><img data-number="4" src="assets/img/modal-banner-img-04-480.jpg" srcset="assets/img/modal-banner-img-04-960.jpg 480w 2x, assets/img/modal-banner-img-04-1280.jpg 960w" alt=""/><img data-number="5" src="assets/img/modal-banner-img-05-480.jpg" srcset="assets/img/modal-banner-img-05-960.jpg 480w 2x, assets/img/modal-banner-img-05-1280.jpg 960w" alt=""/><img data-number="6" src="assets/img/modal-banner-img-06-480.jpg" srcset="assets/img/modal-banner-img-06-960.jpg 480w 2x, assets/img/modal-banner-img-06-1280.jpg 960w" alt=""/>
   <div class="thumbs">
     <button data-number="1" id="thumb1" class="active"></button>
     <button data-number="2" id="thumb2"></button>

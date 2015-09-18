@@ -8,8 +8,8 @@
 
 	.title
 		font: normal 61px'mano_negra'
-		margin-bottom: 41px
 		text-align: center
+		margin-bottom: 41px
 
 		&::after
 			color: #5a5a5a
@@ -19,12 +19,20 @@
 			margin: -20px 0 0 160px
 
 	figure
-		img
+		span
 			cursor: pointer
 			float: left
+			display: block
+			overflow: hidden
 
-			&.margin
-				margin: 0 18px
+			img
+				transition: 0.3s
+
+			// &:hover
+			// 	outline: solid 2px $theme-green
+
+		.margin
+			margin: 0 18px
 
 		figcaption
 			display: block				
