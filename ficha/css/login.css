@@ -1,0 +1,21 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	body{
+		background: #fbfbfb;
+	}
+
+	form{
+		width: 477px;
+		margin:10% auto 0;
+		display: block;
+	}
+
+	input{
+		height: 30px;
+		width: 100%;
+		margin: 16px 0;
+		padding: 5px 10px;
+	}

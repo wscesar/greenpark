@@ -2,7 +2,7 @@
 	extract($_POST);
 
 	if(isset($submit)) {
-		if($username == 'admin' && $password == '122'){
+		if($username == 'admin' && $password == '123'){
 			echo "<script>sessionStorage.setItem('login', 'true')</script>";
 			echo "<script>location='index.php'</script>";
 		}else{
@@ -37,7 +37,7 @@
 
 		input{
 			height: 30px;
-			width: 100%
+			width: 100%;
 		}
 
 	</style>
