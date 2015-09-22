@@ -196,7 +196,6 @@
 	</form>
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
 	
 	<script src="js/masked-input.js"></script>
 	<script src="js/mask-money.js"></script>
@@ -205,8 +204,9 @@
 		$('#cpf').mask("999.999.999-99")
 		$('#celular').mask("99-9999-99999")
 		$('#telefone').mask("99-9999-9999")
-		// $('#tempo_de_servico').maskMoney()
 		$('#renda').maskMoney()
+		$('#fgts').maskMoney()
+		$('#outras_rendas').maskMoney()
 		
 		document.querySelector('#uf').onchange = function() {
 			data = 'uf='+this.value
@@ -220,7 +220,9 @@
 			  
 			  if ( this.status >= 200 && this.status < 400 ) {
 			      response = request.responseText;
-			      $("#cidade").html(response);
+			      response = createTextNode(response);
+			      document.querySelector('#cidade')innerHTML(response)
+			      // $("#cidade").html(response);
 			  }
 			}
 		}
