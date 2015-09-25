@@ -1,77 +1,43 @@
+nav = document.querySelector('nav')
 nav_a = document.querySelectorAll('nav a');
-// to_top = document.querySelector('.icon-top_arrow');
+header = document.querySelector('header')
 header_height = document.querySelector('header').offsetHeight;
 
-// to_top.addEventListener('click', ->
-//   $('html, body').stop().animate { scrollTop: 0 }, 1000
+// to_top = document.querySelector('header .logo');
 
+// to_top.addEventListener('click', function() {
 
-for ( var i = 0 ; i < nav_a.length ; i++ ) {
-
-  nav_a[i].addEventListener('click', function() {
-    section = this.getAttribute('data-section');
-    goTo = document.querySelector(section).offsetTop;
-    goTo = goTo - header_height;
-
-    $('html, body').stop().animate({ scrollTop: goTo }, 1000);
-  });
-
-
-
-// window.onscroll = function(){
-    
-//     window_top_position = window.pageYOffset
-
-//     if (window_top_position > 1) {
-//         document.querySelector('header').classList.add('fixed')
-//         console.log('oi')
-//     }else{
-//         document.querySelector('header').classList.remove('fixed')
-//         console.log('ola')
-//     }
+//   $('html, body').stop().animate({ scrollTop: 0 }, 1000)
 
 // }
 
 
-// window.onscroll = function(){
-    
-//     video         = document.querySelector('#video').offsetHeight;
-//     contact       = document.querySelector('#contact').offsetHeight;
-//     location      = document.querySelector('#location').offsetHeight;
-//     greenpark     = document.querySelector('#greenpark').offsetHeight;
-//     appartments   = document.querySelector('#appartments').offsetHeight;
-//     differentials = document.querySelector('#differentials').offsetHeight;
-//     work_progress = document.querySelector('#work-progress').offsetHeight;
+for (var i = 0; i < nav_a.length; i++) {
 
-//     window_top_position = window.pageYOffset
+    nav_a[i].addEventListener('click', function() {
+        section = this.getAttribute('data-section');
+        goTo = document.querySelector(section).offsetTop;
+        goTo = goTo - header_height;
 
-//     if (window_top_position == sobre) {
-//          _gaq.push(['_trackPageview', '/differentials']);
-//     }
+        $('html, body').stop().animate({
+            scrollTop: goTo
+        }, 1000);
+    });
 
-//     if (window_top_position == servicos) {
-//          _gaq.push(['_trackPageview', '/greenpark']);
-//     }
+}
 
-//     if (window_top_position == portfolio) {
-//          _gaq.push(['_trackPageview', '/appartments']);
-//     }
 
-//     if (window_top_position == web) {
-//          _gaq.push(['_trackPageview', '/video']);
-//     }
+window.onscroll = function(){
+    window_top_position = window.pageYOffset
+    banner_height = document.querySelector('#banner').offsetHeight;
 
-//     if (window_top_position == diferencial) {
-//          _gaq.push(['_trackPageview', '/location']);
-//     }
+    if (window_top_position > banner_height) {
 
-//     if (window_top_position == depoimentos) {
-//          _gaq.push(['_trackPageview', '/contact']);
-//     }
+        header.classList.add('fixed')
 
-//     if (window_top_position == contato) {
-//          _gaq.push(['_trackPageview', '/work']);
-//     }
+    }else{
+        header.classList.remove('fixed')
+        banner.style.backgroundPosition = '50% ' + window_top_position + 'px'
+    }
 
-// }
 }

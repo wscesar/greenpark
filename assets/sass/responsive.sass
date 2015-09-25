@@ -158,10 +158,16 @@
 
 
 	header
+		position: fixed
 		background: $white
 		height: 40px
+		left: 0
+		top: 0
 		width: 100%
 		z-index: 2
+
+		&.fixed + section
+			margin-top: 0
 
 		&.active nav
 			left: 0
@@ -339,17 +345,33 @@
 		.icons
 			margin-top: 20px
 
-			figure 
+			figure
 				display: block
 				float: left
 				margin: 0 0 10px
 				width: 100%
 
-				img
-					display: block
+				.img
 					float: left
-					width: 2rem
+					width: 28px
+					height: 28px
 
+					&.icon-1
+						background: url(../img/icon-small.png) 0px 28px
+					&.icon-2
+						background: url(../img/icon-small.png) 0px 56px
+					&.icon-3
+						background: url(../img/icon-small.png) 0px 84px
+					&.icon-4
+						background: url(../img/icon-small.png) 0px 112px
+					&.icon-5
+						background: url(../img/icon-small.png) 0px 140px
+					&.icon-6
+						background: url(../img/icon-small.png) 0px 168px
+					&.icon-7
+						background: url(../img/icon-small.png) 0px 196px
+					&.icon-8
+						background: url(../img/icon-small.png) 0px 224px
 
 				figcaption
 					display: block
@@ -393,7 +415,7 @@
 			max-width: 339px
 			width: 100%
 
-		figure img.margin
+		figure .margin
 			margin: 18px auto
 	
 	#location
@@ -530,9 +552,20 @@
 
 
 
+@media only screen and (max-device-width: 560px)
+	
+	#differentials .icons .ctrl.left
+		left: 0
+
+	#differentials .icons .ctrl.right
+		right: 0
 
 
 @media only screen and (max-device-width: 480px)
+	#differentials .icons .ctrl.left,
+	#differentials .icons .ctrl.right
+		display: none
+		
 	#contact
 		.contact-details
 			.col1

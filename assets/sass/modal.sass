@@ -35,11 +35,11 @@
 
 .modal
     display: none
+    height: 100%
     position: fixed
+    width: 100%
     z-index: 3
     +transition(0.5s)
-    height: 100%
-    width: 100%
 
 
     &.background
@@ -51,8 +51,8 @@
     &.active
         display: block
 
-    &.form, &.banner, &.table
-        background: $white
+    &.form, &.banner
+        background-color: $white
         border-radius: 2px
         left: 50%
         position: fixed
@@ -62,6 +62,10 @@
     &.form
         border: none
         box-shadow: 10px 10px 0 $white, -10px -10px 0 $white, -10px 10px 0 $white, 10px -10px 0 $white, -20px 20px 20px $theme-black, 20px 20px 20px $theme-black
+        background-image: url(../img/leaf.png), url(../img/logo-teamprime.png)
+        background-position: center top, center bottom
+        background-repeat: no-repeat
+        background-size:  auto 50px
         height: auto
         padding: 50px
         width: 600px
@@ -87,7 +91,7 @@
             margin-top: 15px
 
             label
-                color: #949494
+                color: $theme-green
                 left: 8px
                 padding: 0 5px 2px
                 position: absolute
@@ -95,19 +99,21 @@
                 width: 100%
                 +transition(0.5s)
 
+
                 &.fixed
                     top: -7px
                     left: 0
                     font-size: 0.6rem
                     color: #fff
-                    background: #949494
+                    background: $theme-green
                     height: auto
                     width: 100%
 
+
             .text
                 background: none
-                border: solid 1px #949494
-                color: #949494
+                border: solid 1px $theme-green
+                color: $theme-green
                 font-size: 1rem
                 margin-bottom: 12px
                 padding: 5px
@@ -128,6 +134,12 @@
             textarea.text
                 height: 126px
                 resize: none
+
+            .submit
+                background: $theme-green
+
+                &.success, &.alert, &.error
+                    background: transparent
 
     &.banner
         border: solid 1px #ccc
@@ -171,8 +183,6 @@
             top: 0
             background-color: transparent
             -webkit-filter: invert(100%)
-
-
 
             &::before
                 top: 50%
@@ -218,35 +228,3 @@
                 
                 &.active, &:hover
                     background: $theme-green
-
-
-    // &.table
-    //     border: solid 1px #ccc
-    //     box-shadow: 20px 20px 0px $white, -20px -20px 0px $white, -20px 20px 0px $white, 20px -20px 0px $white, -40px 40px 40px $theme-black, 40px 40px 40px $theme-black
-
-    //     ul
-    //         width: auto
-    //         display: none
-
-    //         &.show
-    //             display: block
-
-    //         li
-    //             background: #fff
-    //             padding: 15px
-    //             width: 300px
-                
-    //             &:nth-child(odd)
-    //                 background: #eee
-
-    //             &.title
-    //                 background: $blue
-    //                 color: #fff
-    //                 padding: 20px 0 
-    //                 text-align: center
-                
-    //             span
-    //                 display: inline-block
-                    
-    //                 &.value
-    //                     float: right

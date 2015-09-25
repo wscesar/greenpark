@@ -3,7 +3,7 @@
     date_default_timezone_set("Brazil/East");
     
     require 'smtp.php';
-    // require 'save-contact.php';
+    require 'save-contact.php';
 
     $smtp->host = 'mail.ituinformatica.com'; // smtp.myserver.com
     $smtp->user = 'teste@ituinformatica.com'; // myuser@myserver.com
@@ -16,6 +16,10 @@
 
                 <tr>
                     <td><b>Dados Pessoais</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Contato:</b> '.$phone.'</td>
                 </tr>
 
                 <tr>

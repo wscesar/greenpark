@@ -17,21 +17,38 @@ form{
 	width: 960px;
 }
 
+.row{
+	width: 100%;
+	float: left;
+	padding: 25px 0;
+}
+
+.result{
+	margin: auto;
+	width: 960px;	
+}
+
+.inner-row{
+	padding: 5px 15px 5px 5px;
+	height: 45px;
+	width: 100%;
+	float: left;
+	border: solid 1px #888;
+	margin-top: -1px;
+}
+
+.inner-row b{display: block;} 
+
+
 h2{display: block; clear: both;}
 
 img{display: block; margin: 10px 10px 30px; height: 66px;}
 
-table{
-	display: block;
-	clear: both;
-	margin-bottom: 20px;
-}
-
-table:nth-of-type(odd){
+.row:nth-of-type(odd){
 	background: #ebebeb;
 }
 
-form div{
+form div, .inner-row div{
 	margin: 0 0 20px;
 	padding: 0 10px 0 0;
 	float: left;

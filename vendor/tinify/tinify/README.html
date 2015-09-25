@@ -1,0 +1,27 @@
+<p><a href="https://travis-ci.org/tinify/tinify-php"><img src="https://travis-ci.org/tinify/tinify-php.svg?branch=master" alt="Build Status"></a></p>
+<h1 id="tinify-api-client-for-php">Tinify API client for PHP</h1>
+<p>PHP client for the Tinify API. Tinify compresses your images intelligently. Read more at <a href="https://tinify.com">https://tinify.com</a>.</p>
+<h2 id="documentation">Documentation</h2>
+<p><a href="https://tinypng.com/developers/reference/php">Go to the documentation for the PHP client</a>.</p>
+<h2 id="installation">Installation</h2>
+<p>Install the API client with Composer. Add this to your <code>composer.json</code>:</p>
+<pre><code class="lang-json">{
+  &quot;require&quot;: {
+    &quot;tinify/tinify&quot;: &quot;*&quot;
+  }
+}
+</code></pre>
+<p>Then install with:</p>
+<pre><code>composer install
+</code></pre><p>Use autoloading to make the client available in PHP:</p>
+<pre><code class="lang-php">require_once(&quot;vendor/autoload.php&quot;);
+</code></pre>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-php">Tinify\setKey(&quot;YOUR_API_KEY&quot;);
+Tinify\fromFile(&quot;unoptimized.png&quot;)-&gt;toFile(&quot;optimized.png&quot;);
+</code></pre>
+<h2 id="running-tests">Running tests</h2>
+<pre><code>composer install
+vendor/bin/phpunit
+</code></pre><h2 id="license">License</h2>
+<p>This software is licensed under the MIT License. <a href="LICENSE">View the license</a>.</p>

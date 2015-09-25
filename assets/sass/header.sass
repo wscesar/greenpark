@@ -4,6 +4,14 @@ header
 	z-index: 3
 	position: fixed
 
+	&.fixed
+		position: fixed
+		left: 0
+		top: 0
+
+		// & + section
+			// margin-top: 127px
+
 	.leaf
 		display: none
 		width: 20%
@@ -16,6 +24,12 @@ header
 		display: -webkit-flex
 		display: -ms-flex
 		display: flex
+
+		&.top
+			display:none
+
+		&.bottom
+			display: block
 
 		span
 			-webkit-flex: 1

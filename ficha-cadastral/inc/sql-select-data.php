@@ -30,57 +30,59 @@
 		$nascimento = $nascimento[2] .' / '. $nascimento[1] .' / '. $nascimento[0];
 
 		$endereco = "$rua, nº $numero, $bairro, $cidade/$uf";
-		
-		echo '
-			<table border="1" cellpadding="10" cellspacing="0" width="80%" align="center" style="border-collapse: collapse;">
-				<thead>
-					<tr>
-						<td colspan="4"><b>Nome: </b>'.$nome.'</td>
-					</tr>
-				</thead>
-				
-				<tbody style="">
-					<tr>
-						<td colspan="4"><b>Endereco: </b>'.$endereco.'</td>
-					</tr>
 
-					<tr>
-						<td colspan="2"><b>Pai: </b>'.$pai.'</td>
-						<td colspan="2"><b>Mae: </b>'.$mae.'</td>
-					</tr>
+		$result = "
+			<div class='row'>
+				<div class='result'>
+					<div class='inner-row'>
+						<div class='w1'> <b>Nome:</b> $nome</div>
+					</div>
+
+					<div class='inner-row'>
+						<div class='w1'> <b>Endereço:</b> $endereco</div>
+					</div>
+
+					<div class='inner-row'>
+						<div class='w2'> <b>Nome do Pai:</b> $pai</div>
+						<div class='w2'> <b>Nome da Mae:</b> $mae</div>
+					</div>
+
+					<div class='inner-row'>
+						<div class='w6'> <b>Nascimento:</b> $nascimento</div>
+						<div class='w6'> <b>Naturalidade:</b> $naturalidade</div>
+						<div class='w6'> <b>Nacionalidade:</b> $nacionalidade</div>
+						<div class='w6'> <b>Sexo:</b> $sexo</div>
+						<div class='w6'> <b>Estado Civil:</b> $estado_civil</div>
+						<div class='w6'> <b>Regime_casamento:</b> $regime_casamento</div>
+					</div>
 					
-					<tr>
-						<td><b>Sexo: </b>'.$sexo.'</td>
-						<td><b>Nascimento: </b>'.$nascimento.'</td>
-						<td><b>Naturalidade: </b>'.$naturalidade.'</td>
-						<td><b>Nacionalidade: </b>'.$nacionalidade.'</td>
-					</tr>
+					<div class='inner-row'>
+						<div class='w4'> <b>Rg / Rne / Pass:</b> $pass</div>
+						<div class='w4'> <b>Cpf:</b> $cpf</div>
+						<div class='w4'> <b>Empresa:</b> $empresa</div>
+						<div class='w4'> <b>Profissão:</b> $profissao</div>
+					</div>
 
-					<tr>
-						<td><b>Rg_rne_pass: </b>'.$rg_rne_pass.'</td>
-						<td><b>Cpf: </b>'.$cpf.'</td>
-						<td><b>Empresa: </b>'.$empresa.'</td>
-						<td><b>Profissao: </b>'.$profissao.'</td>
-					</tr>
+					<div class='inner-row'>
+						<div class='w4'> <b>Tempo_de_servico:</b> $tempo_de_servico</div>
+						<div class='w4'> <b>Renda:</b> $renda</div>
+						<div class='w4'> <b>FGTS:</b> $fgts</div>
+						<div class='w4'> <b>Outras Rendas:</b> $renda</div>
+					</div>
 
-					<tr>
-						<td><b>Renda: </b>'.$renda.'</td>
-						<td><b>Outras_rendas: </b>'.$outras_rendas.'</td>
-						<td><b>Tempo_de_servico: </b>'.$tempo_de_servico.'</td>
-						<td><b>Fgts: </b>'.$fgts.'</td>
-					</tr>
+					<div class='inner-row'>
+						<div class='w4'> <b>Telefone:</b> $telefone</div>
+						<div class='w4'> <b>Celular:</b> $celular</div>
+						<div class='w4'> <b>Email:</b> $email</div>
+						<div class='w4'> <b>Cartorio:</b> $cartorio</div>
+					</div>
 
-					</tr>
-						<td><b>Telefone: </b>'.$telefone.'</td>
-						<td><b>Celular: </b>'.$celular.'</td>
-						<td><b>Email: </b>'.$email.'</td>
-						<td><b>Cartorio: </b>'.$cartorio.'</td>
-					</tr>
-				</tbody>
-			</table>
-		';
+				</div>
+			</div>
+		";
+		
+		echo $result;
 	}
-
 
 	mysqli_close($con);
 ?>

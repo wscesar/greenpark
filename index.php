@@ -5,12 +5,8 @@
     <meta charset='UTF-8'>
 
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
-    <!-- <?=$metas?> -->
 
     <title>Condomínio Residencial Greenpark</title>
-
-    <!-- Base Link -->
-    <base href='http://192.168.1.230/greenpark/'>
 
     <!-- Favicon -->
     <link rel='icon' href='assets/img/favicon.ico'>
@@ -19,6 +15,8 @@
     <link rel='stylesheet' href='assets/css/main.css'>
     <link rel='stylesheet' href='assets/css/fonts.css'>
 
+    <!-- Analytics -->
+    <script src='assets/js/analytics.js'></script>
 
     <!-- HTML5 Shiv -->
     <!--[if lt IE 9]><script src='assets/js/html5.js'></script><![endif]-->
@@ -40,41 +38,49 @@
     <script src='assets/js/map.js'></script>
     <script src='assets/js/swipe.js'></script>
 
-    <!-- Analytics 
-        <script src='assets/js/vendor/analytics.js'></script>
-    -->
+    <script>
+        header = document.querySelector('header');
+        logo = document.querySelector('header .logo');
+        menu_button = document.querySelector('header button');
+        responsive_nav_a = document.querySelectorAll('header nav a');
 
+        menu_button.addEventListener( 'click' , function() {
 
-
-<script>
-    header = document.querySelector('header');
-    logo = document.querySelector('header .logo');
-    menu_button = document.querySelector('header button');
-    responsive_nav_a = document.querySelectorAll('header nav a');
-
-    menu_button.addEventListener( 'click' , function() {
-
-        header.classList.add('active');
-
-    });
-
-    for( var i = 0 ; i < nav_a.length ; i++ ) {
-
-        nav_a[i].addEventListener( 'click' , function() {
-
-            header.classList.remove('active');
+            header.classList.add('active');
 
         });
 
-    }
+        for( var i = 0 ; i < nav_a.length ; i++ ) {
 
-</script>
+            nav_a[i].addEventListener( 'click' , function() {
 
-<style>
-#appartments figure span:hover img{
--webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px);
+                header.classList.remove('active');
+
+            });
+
+        }
+
+        
+
+        differentials_ctrl = document.querySelectorAll('#differentials .icons .ctrl')
+
+        for ( var i = 0 ; i < differentials_ctrl.length ; i++ ) {
+
+            differentials_ctrl[i].onclick = function() {
+            
+                differentials_figure = document.querySelectorAll('#differentials .icons figure')
+                
+                for ( var i = 0 ; i < differentials_figure.length ; i++ ) {
+
+                    differentials_figure[i].classList.toggle('active')
+                    
+                }
+                
+            }
+            
+        }
+    </script>
+
     
-}
-</style>
 </body>
 </html>
