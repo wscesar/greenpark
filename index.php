@@ -31,54 +31,16 @@
 
     <script src='assets/js/input-validate.js'></script>
     <script src='assets/js/send-form.js'></script>
-    <script src='assets/js/blueprint.js'></script>
+    <script src='assets/js/slider.js'></script>
     <script src='assets/js/unbounce.js'></script>
     <script src='assets/js/scroll.js'></script>
     <script src='assets/js/modal.js'></script>
     <script src='assets/js/map.js'></script>
     <script src='assets/js/swipe.js'></script>
+    <script src='assets/js/responsive-nav.js'></script>
 
     <script>
-        header = document.querySelector('header');
-        logo = document.querySelector('header .logo');
-        menu_button = document.querySelector('header button');
-        responsive_nav_a = document.querySelectorAll('header nav a');
-
-        menu_button.addEventListener( 'click' , function() {
-
-            header.classList.add('active');
-
-        });
-
-        for( var i = 0 ; i < nav_a.length ; i++ ) {
-
-            nav_a[i].addEventListener( 'click' , function() {
-
-                header.classList.remove('active');
-
-            });
-
-        }
-
         
-
-        differentials_ctrl = document.querySelectorAll('#differentials .icons .ctrl')
-
-        for ( var i = 0 ; i < differentials_ctrl.length ; i++ ) {
-
-            differentials_ctrl[i].onclick = function() {
-            
-                differentials_figure = document.querySelectorAll('#differentials .icons figure')
-                
-                for ( var i = 0 ; i < differentials_figure.length ; i++ ) {
-
-                    differentials_figure[i].classList.toggle('active')
-                    
-                }
-                
-            }
-            
-        }
     </script>
 
     

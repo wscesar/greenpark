@@ -57,14 +57,14 @@
 					</div>
 					
 					<div class='inner-row'>
-						<div class='w4'> <b>Rg / Rne / Pass:</b> $pass</div>
-						<div class='w4'> <b>Cpf:</b> $cpf</div>
+						<div class='w4'> <b>RG / RNE / PASS:</b> $rg_rne_pass</div>
+						<div class='w4'> <b>CPF:</b> $cpf</div>
 						<div class='w4'> <b>Empresa:</b> $empresa</div>
 						<div class='w4'> <b>Profissão:</b> $profissao</div>
 					</div>
 
 					<div class='inner-row'>
-						<div class='w4'> <b>Tempo_de_servico:</b> $tempo_de_servico</div>
+						<div class='w4'> <b>Tempo de servico:</b> $tempo_de_servico</div>
 						<div class='w4'> <b>Renda:</b> $renda</div>
 						<div class='w4'> <b>FGTS:</b> $fgts</div>
 						<div class='w4'> <b>Outras Rendas:</b> $renda</div>
@@ -76,7 +76,6 @@
 						<div class='w4'> <b>Email:</b> $email</div>
 						<div class='w4'> <b>Cartorio:</b> $cartorio</div>
 					</div>
-
 				</div>
 			</div>
 		";

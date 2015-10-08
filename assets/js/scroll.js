@@ -37,7 +37,7 @@ window.onscroll = function(){
 
     }else{
         header.classList.remove('fixed')
-        banner.style.backgroundPosition = '50% ' + window_top_position + 'px'
+        // banner.style.backgroundPosition = '50% ' + window_top_position + 'px'
     }
 
 }

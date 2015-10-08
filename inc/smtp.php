@@ -5,6 +5,7 @@
         var $user;
         var $pass;
         var $port = 587;
+        // var $port = 465; //gmail
 
         public function put($value) {
             $debug = false;

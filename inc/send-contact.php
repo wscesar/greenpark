@@ -5,9 +5,9 @@
     require 'smtp.php';
     require 'save-contact.php';
 
-    $smtp->host = 'mail.ituinformatica.com'; // smtp.myserver.com
-    $smtp->user = 'teste@ituinformatica.com'; // myuser@myserver.com
-    $smtp->pass = 'itu123456'; // mypop3password
+    $smtp->host = 'smtp.greenparksalto.com.br';
+    $smtp->user = 'greenpark@greenparksalto.com.br';
+    $smtp->pass = 'bLupr1nt';
 
     $msg = '<table>
                 <tr>
@@ -37,15 +37,15 @@
 
 
     // Send
-    // $smtp->send('wscesar@gmail.com', 'testando envio', $msg)
+    // $success = $smtp->send('wscesar@gmail.com', 'Email teste site Greenpark', $msg);
+    // $success = $smtp->send('greenpark@greenparksalto.com.br', strtoupper($name).' enviou uma mensagem pelo site Greenpark: ', $msg);
+    $success = $smtp->send('contato@teamprime.com.br', 'Mensagem Enviada Por: '.strtoupper($name), $msg);
 
-    $success = $smtp->send('wscesar@gmail.com', 'Mensagem Enviada Por: '.strtoupper($name), $msg);
-
-    // if( !$success ) {
-    //     echo 'ok';
-    // }else{
-    //     echo "error";
-    // }
+    if( !$success ) {
+        echo 'ok';
+    }else{
+        echo "error";
+    }
     
 
 ?>

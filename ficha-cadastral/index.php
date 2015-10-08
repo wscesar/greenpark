@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 	<meta charset='UTF-8'>
-	<title>Document</title>
+	<title>Ficha Cadastral</title>
 
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -14,37 +14,37 @@
 		<h2>Ficha Cadastral - Pessoa Física</h2>
 
 		<div class="w1">
-			<label for="nome">Nome</label>
+			<label for="nome">Nome*</label>
 			<input id="nome" name="nome" required>
 		</div>
 
 		<div class="w2">
-			<label for="pai">Pai</label>
+			<label for="pai">Pai*</label>
 			<input id="pai" name="pai" required>
 		</div>
 
 		<div class="w2">
-			<label for="mae">Mãe</label>
+			<label for="mae">Mãe*</label>
 			<input id="mae" name="mae" required>
 		</div>
 
 		<div class="w6">
-			<label for="dia">Nascimento</label>
+			<label for="dia">Nascimento*</label>
 			<input type="date" name="nascimento">
 		</div>
 
 		<div class="w6">
-			<label for="naturalidade">Naturalidade</label>
+			<label for="naturalidade">Naturalidade*</label>
 			<input id="naturalidade" name="naturalidade" required>
 		</div>
 
 		<div class="w6">
-			<label for="nacionalidade">Nacionalidade</label>
+			<label for="nacionalidade">Nacionalidade*</label>
 			<input id="nacionalidade" name="nacionalidade" required>
 		</div>
 
 		<div class="w6">
-			<label for="sexo">Sexo</label>
+			<label for="sexo">Sexo*</label>
 			
 			<select id="sexo" name="sexo" required>
 				<option value="Masculino">Masculino</option>
@@ -53,7 +53,7 @@
 		</div>
 
 		<div class="w6">
-			<label for="estado_civil">Estado Civil</label>
+			<label for="estado_civil">Estado Civil*</label>
 			
 			<select id="estado_civil" name="estado_civil" required>
 				<option value="Casado">Casado</option>
@@ -64,7 +64,7 @@
 		</div>
 
 		<div class="w6">
-			<label for="regime_casamento">Regime de Casamento</label>
+			<label for="regime_casamento">Regime de Casamento*</label>
 			
 			<select id="regime_casamento" name="regime_casamento" required>
 				<option value="total">Total</option>
@@ -75,48 +75,49 @@
 		</div>
 
 		<div class="w4">
-			<label for="rg_rne_pass">RG / RNE / PASS</label>
+			<label for="rg_rne_pass">RG / RNE / PASS*</label>
 			<input id="rg_rne_pass" name="rg_rne_pass" required>
 		</div>
 
 		<div class="w4">
-			<label for="cpf">CPF</label>
+			<label for="cpf">CPF*</label>
 			<input id="cpf" name="cpf" placeholder="123.456.789-10" required>
 		</div>
 
 		<div class="w4">
-			<label for="empresa">Empresa</label>
+			<label for="empresa">Empresa*</label>
 			<input id="empresa" name="empresa" required>
 		</div>
 
 		<div class="w4">
-			<label for="profissao">Profissão</label>
+			<label for="profissao">Profissão*</label>
 			<input id="profissao" name="profissao" required>
 		</div>
 
 		<div class="w4">
-			<label for="tempo_de_servico">Tempo de Serviço</label>
-			<input type="number" id="tempo_de_servico" name="tempo_de_servico"  data-affixes-stay="true" data-prefix="" data-thousands="." data-decimal="" placeholder="0" required>
+			<label for="tempo_de_servico">Tempo de Serviço*</label>
+			<input type="number" id="tempo_de_servico" name="tempo_de_servico" min="0" data-affixes-stay="true" data-prefix="" data-thousands="." data-decimal="" placeholder="0" required>
 		</div>
 
 		<div class="w4">
-			<label for="renda">Renda</label>
+			<label for="renda">Renda*</label>
 			<input id="renda" name="renda" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal="," placeholder="R$ 0,00" required>
 		</div>
 
 		<div class="w4">
-			<label for="fgts">FGTS</label>
+			<label for="fgts">FGTS*</label>
 			<input id="fgts" name="fgts" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal="," placeholder="R$ 0,00" required>
 		</div>
 
 		<div class="w4">
 			<label for="outras Rendas">Outras Rendas</label>
-			<input id="outras_rendas" name="outras_rendas" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal="," placeholder="R$ 0,00" required>
+			<input id="outras_rendas" name="outras_rendas" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal="," placeholder="R$ 0,00">
 		</div>
 
 		<div class="w10">
-			<label for="uf">UF</label>
-			<select name="uf" id="uf" required>
+			<label for="uf">UF*</label>
+			<select name="uf" id="uf" placeholder="UF" required >
+				<option></option>
 				<option value="AC">AC</option>
 				<option value="AL">AL</option>
 				<option value="AP">AP</option>
@@ -148,7 +149,7 @@
 		</div>
 
 		<div class="w5">
-			<label for="cidade">Cidade</label>
+			<label for="cidade">Cidade*</label>
 
 			<select id="cidade" name="cidade" required>
 				<option value="">Selecionar Estado</option>
@@ -156,37 +157,37 @@
 		</div>
 
 		<div class="w2">
-			<label for="rua">Rua</label>
+			<label for="rua">Rua*</label>
 			<input id="rua" name="rua" required>
 		</div>
 
 		<div class="w5">
-			<label for="numero">Número</label>
+			<label for="numero">Número*</label>
 			<input id="numero" name="numero" required>
 		</div>
 
 		<div class="w4">
-			<label for="bairro">Bairro</label>
+			<label for="bairro">Bairro*</label>
 			<input id="bairro" name="bairro" required>
 		</div>
 
 		<div class="w8">
-			<label for="telefone">Telefone</label>
+			<label for="telefone">Telefone*</label>
 			<input id="telefone" name="telefone" placeholder="11-1234-5678" required>
 		</div>
 
 		<div class="w8">
-			<label for="celular">Celular</label>
+			<label for="celular">Celular*</label>
 			<input id="celular" name="celular" placeholder="11-1234-56789" required>
 		</div>
 
 		<div class="w4">
-			<label for="email">Email</label>
+			<label for="email">Email*</label>
 			<input type="email" id="email" name="email" placeholder="nome@email.com" required>
 		</div>
 
 		<div class="w4">
-			<label for="cartorio">Cartório</label>
+			<label for="cartorio">Cartório*</label>
 			<input id="cartorio" name="cartorio" required>
 		</div>
 
@@ -201,12 +202,12 @@
 	<script src="js/mask-money.js"></script>
 
 	<script>
-		$('#cpf').mask("999.999.999-99")
-		$('#celular').mask("99-9999-99999")
-		$('#telefone').mask("99-9999-9999")
-		$('#renda').maskMoney()
-		$('#fgts').maskMoney()
-		$('#outras_rendas').maskMoney()
+		$('#cpf').mask("999.999.999-99");
+		$('#celular').mask("99-9999-99999");
+		$('#telefone').mask("99-9999-9999");
+		$('#renda').maskMoney();
+		$('#fgts').maskMoney();
+		$('#outras_rendas').maskMoney();
 		
 		document.querySelector('#uf').onchange = function() {
 			data = 'uf='+this.value
@@ -218,14 +219,22 @@
 
 			request.onload = function() {
 			  
-			  if ( this.status >= 200 && this.status < 400 ) {
+			  if ( request.status >= 200 && request.status < 400 ) {
+
 			      response = request.responseText;
-			      response = createTextNode(response);
-			      document.querySelector('#cidade')innerHTML(response)
-			      // $("#cidade").html(response);
+
+			      document.querySelector('#cidade').innerHTML = response;
+
 			  }
+
 			}
 		}
 	</script>
+
+	<style>
+		select:invalid{
+			/*outline: solid 1px green;*/
+		}
+	</style>
 </body>
 </html>

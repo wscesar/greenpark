@@ -24,15 +24,13 @@
 		box-sizing: border-box;
 	}
 		body{
-			background: #03582d;
+			background: #fbfbfb;
 		}
 
 		form{
 			width: 300px;
 			margin:10% auto 0;
 			display: block;
-			background: #0f0;
-
 		}
 
 		input{
@@ -40,13 +38,20 @@
 			width: 100%;
 		}
 
+		img{
+			margin: 25px auto;
+			display: block;
+		}
+
 	</style>
 </head>
 <body>
 	<form action="" method="post">
-		<input name="username" type="text">
-		<input name="password" type="password">
+		<img class="logo" src="img/logo-greenpark.png" >
+		<input placeholder="Usuário" name="username" type="text">
+		<input placeholder="Senha" name="password" type="password">
 		<input name="submit" type="submit">
+		<img class="logo" src="img/logo-teamprime.png">
 	</form>	
 </body>
 </html>
